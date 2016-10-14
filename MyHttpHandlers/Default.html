@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function submitform() {
+            document.forms['form'].submit();
+        }
+    </script>
+</head>
+<body>
+    <form runat="server" name="form" method="GET">
+       点击刷新验证码： <img id="imgValidationCode" src="ValidationCodeHandler.ashx" onclick="submitform()" />
+    </form>
+</body>
+</html>
